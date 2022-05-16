@@ -50,16 +50,18 @@ while True:
         if contador==2:
             #cv2.destroyWindow('suma')
             resta=res_izq-res_der
-            resp1 = cv2.resize(resta, dsize=(300,500), interpolation = cv2.INTER_LINEAR)
-            cv2.imshow('resta',resp1)
+            #resp1 = cv2.resize(resta, dsize=(300,500), interpolation = cv2.INTER_LINEAR)
+            cv2.imshow('resta',resta)
             #break
         if contador==3:
             multi=res_izq*res_der
-            resp2 = cv2.resize(multi, dsize=(300,500), interpolation = cv2.INTER_LINEAR)#resp1 = cv2.resize(resta, dsize=(300,500), interpolation = cv2.INTER_LINEAR)
-            cv2.imshow('multiplicacion',resp2)
+            #resp2 = cv2.resize(multi, dsize=(300,500), interpolation = cv2.INTER_LINEAR)#resp1 = cv2.resize(resta, dsize=(300,500), interpolation = cv2.INTER_LINEAR)
+            cv2.imshow('multiplicacion',multi)
+            cv2.waitKey()
+            cv2.destroyAllWindows()
         if contador==4:
             div=res_der/res_izq
-            resp3 = cv2.resize(div, dsize=(300,500), interpolation = cv2.INTER_LINEAR)#resp1 = cv2.resize(resta, dsize=(300,500), interpolation = cv2.INTER_LINEAR)
+            #resp3 = cv2.resize(div, dsize=(300,500), interpolation = cv2.INTER_LINEAR)#resp1 = cv2.resize(resta, dsize=(300,500), interpolation = cv2.INTER_LINEAR)
             cv2.imshow('division',resp3)
         if contador==5:
             arr = 255 / np.log(1 + np.max(res_izq))
