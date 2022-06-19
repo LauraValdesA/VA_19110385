@@ -15,10 +15,10 @@ cad3,umbral3 = cv2.threshold(gris,255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH
 
 cad4,umbral4 = cv2.threshold(gris, 127 ,200,cv2.THRESH_TOZERO_INV)
 
-#cv2.imshow('original', img)
-#cv2.imshow('umbral', umbral)
-#cv2.imshow('umbral2', umbral2)
-#cv2.imshow('gaus', gaus)
-#cv2.imshow('OTSU', otsu)
+cv2.imshow('original', img)
+cv2.imshow('umbral', umbral)
+cv2.imshow('umbral2', umbral2)
+cv2.imshow('gaus', gaus)
+cv2.imshow('OTSU', otsu)
 cv2.imshow('trunc', umbral3)
 cv2.imshow('TOZERO_INV', umbral4)
